@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.outsideintdd.katas.scoreboard.acceptance.ScoreFeature" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-24T15:53:09" hostname="nvoulgaris" time="0.003">
-  <properties/>
-  <testcase name="displayScore" classname="com.outsideintdd.katas.scoreboard.acceptance.ScoreFeature" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
