@@ -16,22 +16,25 @@ public class BasketRepository {
   public void add1point(Team team) {
     if (team.equals(Team.A)) {
       teamAScore += ONE_POINT;
+    } else if (team.equals(Team.B)) {
+      teamBScore += ONE_POINT;
     }
-    teamBScore += ONE_POINT;
   }
 
   public void add2points(Team team) {
     if (team.equals(Team.A)) {
+      teamAScore += TWO_POINTS;
+    } else if (team.equals(Team.B)) {
       teamBScore += TWO_POINTS;
     }
-    teamBScore += TWO_POINTS;
   }
 
   public void add3points(Team team) {
     if (team.equals(Team.A)) {
       teamAScore += THREE_POINTS;
+    } else if (team.equals(Team.B)) {
+      teamBScore += THREE_POINTS;
     }
-    teamBScore += THREE_POINTS;
   }
 
   public int getScore(Team team) {
