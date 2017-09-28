@@ -20,50 +20,43 @@ public class ScoreKeeperShould {
     scoreKeeper = new ScoreKeeper(basketRepository, scorePrinter);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamA1pBasket() throws Exception {
     scoreKeeper.scoreTeamA1();
     verify(basketRepository).add1point(Team.A);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamA2pBasket() throws Exception {
     scoreKeeper.scoreTeamA2();
     verify(basketRepository).add2points(Team.A);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamA3pBasket() throws Exception {
     scoreKeeper.scoreTeamA3();
     verify(basketRepository).add3points(Team.A);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamB1pBasket() throws Exception {
     scoreKeeper.scoreTeamB1();
     verify(basketRepository).add1point(Team.B);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamB2pBasket() throws Exception {
     scoreKeeper.scoreTeamB2();
     verify(basketRepository).add2points(Team.B);
   }
 
-  @Test
-  public void
+  @Test public void
   storeTeamB3pBasket() throws Exception {
     scoreKeeper.scoreTeamB3();
     verify(basketRepository).add3points(Team.B);
   }
 
-  @Test
-  public void
+  @Test public void
   printTheScore() throws Exception {
     int teamAScore = 0;
     int teamBScore = 1;
